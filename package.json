@@ -1,0 +1,37 @@
+{
+  "name": "gulp-browatchify",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "description": "Browserify + Watchify the gulp way.",
+  "homepage": "https://github.com/tounano/gulp-browatchify/",
+  "author": "ClickHere <js@clickhere.co.il>",
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "browserify",
+    "watchify"
+  ],
+  "licenses": {
+    "type": "The MIT License",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tounano/gulp-browatchify"
+  },
+  "engines": {
+    "node": ">=0.6.11 <=0.7.0 || >=0.7.3"
+  },
+  "dependencies": {
+    "browserify": "3.*.*",
+    "watchify": "0.*.*",
+    "through2": "latest",
+    "underscore": "latest",
+    "gulp-util": "latest",
+    "when": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "vinyl-source-stream": "latest"
+  }
+}
