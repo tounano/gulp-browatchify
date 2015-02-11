@@ -50,7 +50,11 @@ function applyTransforms (bundler, transforms) {
   transforms = transforms || [];
 
   _.each(transforms, function (t) {
-    bundler.transform(t);
+    if(_.isArray(t)) {
+        bundler.transform(t[0], t[1]);
+    } else {
+        bundler.transform(t);   
+    }
   })
 
   return bundler;
